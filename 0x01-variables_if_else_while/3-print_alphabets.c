@@ -1,28 +1,25 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - Entry point
- *
- * Description: Prints the alphabet using ascii in lower and uppercase
- *
- * Return: Always 0
+ * main - entry block
+ * Description: alphabets in lower and upper ascii
+ * Return: 0
  */
-
 int main(void)
 {
-	char letter;
+	char c = 'a';
 
-	letter = 'a';
-	while (letter <= '{')
+	while (c <= 'z')
 	{
-		putchar (letter);
-		letter++;
+		putchar(c);
+		c++;
 	}
-	letter = 'A';
-	while (letter <= '[')
+	c = 'A';
+
+	while (c <= 'Z')
 	{
-		putchar (letter);
-		letter++;
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
