@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * _isdigit -  checks for checks for a digit (0 through 9).
- * @c: c -  Variable
+ * mul -  checks for checks for a digit (0 through 9).
+ * @a: a -  Variable
+ * @b: b - variable
  * Return: Always 0.
  */
-int _isdigit(int c)
+int mul(int a, int b)
 {
 
-	if (c >= 48 && c <= 57)
-	{
-		return (1);
-	}
-	return (0);
+	int mul;
+
+	mul = a * b;
+
+	return (mul);
 }
